@@ -7,10 +7,12 @@
         <base-button
             :buttonVal="buttonVal"
             v-copy="value"></base-button>
+<!--            :needCopyContent="value"></base-button>-->
     </div>
 </template>
 
 <script>
+
 export default {
     name: 'Home',
     components: {
@@ -21,6 +23,9 @@ export default {
             value: '',
             buttonVal: '一键copy'
         }
+    },
+    methods: {
+
     }
 }
 </script>

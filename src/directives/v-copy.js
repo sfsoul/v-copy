@@ -12,7 +12,8 @@ const vCopy = {
             textarea.style.left = '-9999px';
             textarea.value = el.$value;
             document.body.appendChild(textarea);
-            textarea.select(); // 进行全选
+            textarea.select(); // 用于选择该元素中的文本内容
+            // https://developer.mozilla.org/zh-CN/docs/Web/API/Document/execCommand
             const result = document.execCommand('Copy');
             console.log('result', result);
             if (result) {

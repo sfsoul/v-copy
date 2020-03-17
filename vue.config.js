@@ -7,5 +7,6 @@ module.exports = {
     chainWebpack: config => {
         config.resolve.alias
             .set('css', resolve('public/css'))
+            .set('tools', resolve('src/tools'))
     }
 }
